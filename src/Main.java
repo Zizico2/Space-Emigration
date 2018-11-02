@@ -18,7 +18,11 @@ class Main {
     }
 
     private static void calculateMonths(int nDaysPerYear, Map<Integer, int[]> answers) {
+<<<<<<< HEAD
         int nMonthsPerYear = nDaysPerYear / 4;
+=======
+        int nMonthsPerYear = nDaysPerYear/4;
+>>>>>>> master
         while (nMonthsPerYear > 1) {
             if (nDaysPerYear % nMonthsPerYear == 0) {
                 int nDaysPerMonth = nDaysPerYear / nMonthsPerYear;
