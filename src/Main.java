@@ -1,9 +1,8 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
-public class Main {
-
-
-
+class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Map<Integer, int[]> answers = new HashMap<>(100);
@@ -16,13 +15,10 @@ public class Main {
                 calculateMonths(nDaysPerYear, answers);
         }
         in.close();
-
     }
 
-
     private static void calculateMonths(int nDaysPerYear, Map<Integer, int[]> answers) {
-
-        int nMonthsPerYear = nDaysPerYear / 4;
+        int nMonthsPerYear = nDaysPerYear/4;
         while (nMonthsPerYear > 1) {
             if (nDaysPerYear % nMonthsPerYear == 0) {
                 int nDaysPerMonth = nDaysPerYear / nMonthsPerYear;
